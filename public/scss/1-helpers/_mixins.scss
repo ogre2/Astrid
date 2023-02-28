@@ -1,0 +1,47 @@
+/*------------------------------------------------------------------
+[2. Mixins]
+------------------------------------------------------------------*/
+/*------------------------------------------------------------------
+[Transitions]
+*/
+@mixin easeInOut15s {
+    -webkit-transition: all 0.15s ease-in-out;
+    -moz-transition: all 0.15s ease-in-out;
+    -ms-transition: all 0.15s ease-in-out;
+    -o-transition: all 0.15s ease-in-out;
+    transition: all 0.15s ease-in-out;
+}
+@mixin easeInOut20s {
+    -webkit-transition: all 0.20s ease-in-out;
+    -moz-transition: all 0.20s ease-in-out;
+    -ms-transition: all 0.20s ease-in-out;
+    -o-transition: all 0.20s ease-in-out;
+    transition: all 0.20s ease-in-out;
+}
+@mixin easeInOut25s {
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    -ms-transition: all 0.25s ease-in-out;
+    -o-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
+}
+@mixin easeInOut30s {
+    -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out;
+    transition: all 0.30s ease-in-out;
+}
+/*------------------------------------------------------------------
+[Shadows]
+*/
+@mixin lightShadow {
+    box-shadow:
+        2.8px 2.8px 2.2px rgba(0, 0, 0, 0.003),
+        6.7px 6.7px 5.3px rgba(0, 0, 0, 0.004),
+        12.5px 12.5px 10px rgba(0, 0, 0, 0.005),
+        22.3px 22.3px 17.9px rgba(0, 0, 0, 0.006),
+        41.8px 41.8px 33.4px rgba(0, 0, 0, 0.007),
+        100px 100px 80px rgba(0, 0, 0, 0.01)
+    ;
+}

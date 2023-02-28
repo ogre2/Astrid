@@ -1,0 +1,31 @@
+.navbar-default {
+    .navbar-brand {
+        .navbar-brand-img {
+            height: 25px;
+            width: auto;
+        }
+    }
+    .navbar-collapse {
+        .navbar-nav {
+            font-family: 'Outfit', sans-serif;
+            .nav-item {
+                .nav-link {
+                    font-size: 16px;
+                    font-weight: 500;
+                    line-height: 24px;
+                    color: $ac-oxford;
+                    .btn-primary {
+                        padding: 12px 22px;
+                    }
+                }
+                &:not(:last-of-type) {
+                    margin: 0 20px 0 0;
+                }
+                &.after {
+                    border-right: 2px solid $ac-light;
+                    padding-right: 15px;
+                }
+            }
+        }
+    }
+}
