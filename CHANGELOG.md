@@ -7,13 +7,22 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.0.1] - 02/28/2023
+
+### Changes
+
+- Moved favicon into Public folder.
+- Fixed [1.0.0] details and release links.
+
 ## [1.0.0] - 02/27/2023
 
 ### Added
 
 - This CHANGELOG file to track the evolution of the project and its source code.
 - Added project details, structure diagram, and more info in the README file.
-- Added
+- Public folder to house static assets
+- index.html template entry point
 
-[Unreleased]: https://github.com/ogre2/wirecart/compare/v0.0.2...HEAD
-[1.0.0]: https://github.com/ogre2/wirecart/releases/tag/v0.0.1
+[Unreleased]: https://github.com/ogre2/Asrtrid/compare/v1.0.1...HEAD
+[1.0.1]: https://github.com/ogre2/Asrtrid/compare/v1.0.0...v1.0.1
+[1.0.0]: https://github.com/ogre2/Asrtrid/releases/tag/v1.0.0
