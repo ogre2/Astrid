@@ -7,6 +7,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.1.1] - 02/28/2023
+
+### Added
+
+- [1.1.0] Release link in this change log file.
+
+### Fixed
+
+- Link to template on github pages in the README file.
+
 ## [1.1.0] - 02/28/2023
 
 ### Fixed
@@ -33,6 +43,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Public folder to house static assets
 - index.html template entry point
 
-[Unreleased]: https://github.com/ogre2/Asrtrid/compare/v1.0.1...HEAD
+[Unreleased]: https://github.com/ogre2/Asrtrid/compare/v1.1.1...HEAD
+[1.1.1]: https://github.com/ogre2/Asrtrid/compare/v1.1.0...v1.1.1
+[1.1.0]: https://github.com/ogre2/Asrtrid/compare/v1.0.1...v1.1.0
 [1.0.1]: https://github.com/ogre2/Asrtrid/compare/v1.0.0...v1.0.1
 [1.0.0]: https://github.com/ogre2/Asrtrid/releases/tag/v1.0.0
