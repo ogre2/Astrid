@@ -1,29 +1,84 @@
-.navbar-default {
-    .navbar-brand {
-        .navbar-brand-img {
-            height: 25px;
-            width: auto;
+/*------------------------------------------------------------------
+[3.1. Navigation]
+------------------------------------------------------------------*/
+/*------------------------------------------------------------------
+[Default]
+*/
+.navbar-default,
+.offcanvas {
+    font-family: 'Outfit', sans-serif;
+}
+.navbar-expand-lg {
+    .navbar-toggler {
+        border: 0;
+        outline: 0;
+        box-shadow: none;
+        &:focus,
+        &:active,
+        &:hover {
+            border: 0;
+            outline: 0;
+            box-shadow: none;
+        }
+        .bi-text-indent-left {
+            color: $ac-iris;
         }
     }
-    .navbar-collapse {
+    .navbar-menu {
         .navbar-nav {
-            font-family: 'Outfit', sans-serif;
             .nav-item {
                 .nav-link {
                     font-size: 16px;
                     font-weight: 500;
-                    line-height: 24px;
                     color: $ac-oxford;
-                    .btn-primary {
-                        padding: 12px 22px;
+                    position: relative;
+                    display: inline-block;
+                    padding-left: 0;
+                    padding-right: 0;
+                }
+                .nav-hover {
+                    &:before {
+                        content: "";
+                        height: 2px;
+                        width: 100%;
+                        position: absolute;
+                        left: 0;
+                        bottom: -5px;
+                        background-color: $ac-iris;
+                        opacity: 0;
+                        @include easeInOut25s;
+                    }
+                    &:hover {
+                        &:before {
+                            opacity: 1;
+                            bottom: 0;
+                        }
                     }
                 }
                 &:not(:last-of-type) {
-                    margin: 0 20px 0 0;
+                    margin-right: 30px;
                 }
-                &.after {
-                    border-right: 2px solid $ac-light;
-                    padding-right: 15px;
+            }
+        }
+    }
+}
+.navbar-brand {
+    .navbar-brand-img {
+        height: 25px;
+        width: auto;
+    }
+}
+.offcanvas {
+    .offcanvas-body {
+        .navbar-nav {
+            .nav-item {
+                .nav-link {
+                    font-size: 16px;
+                    font-weight: 500;
+                    color: $ac-oxford;
+                }
+                &:not(:last-of-type) {
+                    margin-bottom: 10px;
                 }
             }
         }

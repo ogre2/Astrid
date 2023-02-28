@@ -322,6 +322,12 @@ input[type="reset"]:-moz-focusring {
   content: none;
 }
 
+.btn:focus, .btn:active {
+  outline: none;
+  border: none;
+  box-shadow: none;
+}
+
 /*------------------------------------------------------------------
 [8. Typography]
 ------------------------------------------------------------------*/
@@ -743,33 +749,82 @@ p {
   color: #1D293F;
 }
 
-.navbar-default .navbar-brand .navbar-brand-img {
+.is-16 {
+  height: 16px;
+  width: 16px;
+}
+
+/*------------------------------------------------------------------
+[3.1. Navigation]
+------------------------------------------------------------------*/
+/*------------------------------------------------------------------
+[Default]
+*/
+.navbar-default,
+.offcanvas {
+  font-family: 'Outfit', sans-serif;
+}
+
+.navbar-expand-lg .navbar-toggler {
+  border: 0;
+  outline: 0;
+  box-shadow: none;
+}
+
+.navbar-expand-lg .navbar-toggler:focus, .navbar-expand-lg .navbar-toggler:active, .navbar-expand-lg .navbar-toggler:hover {
+  border: 0;
+  outline: 0;
+  box-shadow: none;
+}
+
+.navbar-expand-lg .navbar-toggler .bi-text-indent-left {
+  color: #5454D4;
+}
+
+.navbar-expand-lg .navbar-menu .navbar-nav .nav-item .nav-link {
+  font-size: 16px;
+  font-weight: 500;
+  color: #1D293F;
+  position: relative;
+  display: inline-block;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.navbar-expand-lg .navbar-menu .navbar-nav .nav-item .nav-hover:before {
+  content: "";
+  height: 2px;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  background-color: #5454D4;
+  opacity: 0;
+  transition: all 0.25s ease-in-out;
+}
+
+.navbar-expand-lg .navbar-menu .navbar-nav .nav-item .nav-hover:hover:before {
+  opacity: 1;
+  bottom: 0;
+}
+
+.navbar-expand-lg .navbar-menu .navbar-nav .nav-item:not(:last-of-type) {
+  margin-right: 30px;
+}
+
+.navbar-brand .navbar-brand-img {
   height: 25px;
   width: auto;
 }
 
-.navbar-default .navbar-collapse .navbar-nav {
-  font-family: 'Outfit', sans-serif;
-}
-
-.navbar-default .navbar-collapse .navbar-nav .nav-item .nav-link {
+.offcanvas .offcanvas-body .navbar-nav .nav-item .nav-link {
   font-size: 16px;
   font-weight: 500;
-  line-height: 24px;
   color: #1D293F;
 }
 
-.navbar-default .navbar-collapse .navbar-nav .nav-item .nav-link .btn-primary {
-  padding: 12px 22px;
-}
-
-.navbar-default .navbar-collapse .navbar-nav .nav-item:not(:last-of-type) {
-  margin: 0 20px 0 0;
-}
-
-.navbar-default .navbar-collapse .navbar-nav .nav-item.after {
-  border-right: 2px solid #EDEDED;
-  padding-right: 15px;
+.offcanvas .offcanvas-body .navbar-nav .nav-item:not(:last-of-type) {
+  margin-bottom: 10px;
 }
 
 /* @import "debugging.css"; */

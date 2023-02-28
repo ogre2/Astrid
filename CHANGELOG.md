@@ -7,6 +7,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.1.0] - 02/28/2023
+
+### Fixed
+
+- Navbar menu rendering on desktop and mobile devices.
+
+### Removed
+
+- Original site header.
+
 ## [1.0.1] - 02/28/2023
 
 ### Changes
