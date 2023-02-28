@@ -12,6 +12,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Fixed
 
 - Assets file rendering issue (images and stylesheets).
+- Link to template on GitHub pages in the README file.
 
 ## [1.1.1] - 02/28/2023
 
