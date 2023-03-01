@@ -7,6 +7,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.1.5] - 03/01/2023
+
+### Fixed
+
+- Header company logos rendering on mobile.
+- Video player button in features section alignment on mobile.
+
 ## [1.1.4] - 02/28/2023
 
 ### Fixed
@@ -67,7 +74,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Public folder to house static assets
 - index.html template entry point
 
-[Unreleased]: https://github.com/ogre2/Astrid/compare/v1.1.4...HEAD
+[Unreleased]: https://github.com/ogre2/Astrid/compare/v1.1.5...HEAD
+[1.1.5]: https://github.com/ogre2/Astrid/compare/v1.1.4...v1.1.5
 [1.1.4]: https://github.com/ogre2/Astrid/compare/v1.1.3...v1.1.4
 [1.1.3]: https://github.com/ogre2/Astrid/compare/v1.1.2...v1.1.3
 [1.1.2]: https://github.com/ogre2/Astrid/compare/v1.1.1...v1.1.2

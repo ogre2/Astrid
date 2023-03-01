@@ -239,6 +239,14 @@ section {
   object-fit: contain;
 }
 
+@media only screen and (max-width: 400px) {
+  .sample-logo {
+    width: 30%;
+    aspect-ratio: 4/2;
+    margin-bottom: -10px;
+  }
+}
+
 .link {
   text-decoration: none;
 }
