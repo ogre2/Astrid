@@ -25,7 +25,7 @@ body::-webkit-scrollbar-thumb {
 [Areas]
 */
 section {
-    padding: 50px 0;
+    padding: 100px 0;
 }
 .page-wrapper,
 .vh {
@@ -41,4 +41,9 @@ section {
 */
 .h-100 {
     min-height: 100%;
+}
+.sample-logo {
+    width: 15%;
+    aspect-ratio: 3/2;
+    object-fit: contain;
 }

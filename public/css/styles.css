@@ -213,7 +213,7 @@ body::-webkit-scrollbar-thumb {
 [Areas]
 */
 section {
-  padding: 50px 0;
+  padding: 100px 0;
 }
 
 .page-wrapper-75,
@@ -233,6 +233,16 @@ section {
   min-height: 100%;
 }
 
+.sample-logo {
+  width: 15%;
+  aspect-ratio: 3/2;
+  object-fit: contain;
+}
+
+.link {
+  text-decoration: none;
+}
+
 /*------------------------------------------------------------------
 [6. Buttons]
 ------------------------------------------------------------------*/
@@ -243,6 +253,7 @@ button,
 input[type="button"],
 input[type="submit"],
 input[type="reset"] {
+  font-family: 'Outfit', sans-serif;
   outline: none;
   border: none;
   box-shadow: none;
@@ -289,19 +300,20 @@ input[type="reset"]:-moz-focusring {
   border: none;
   box-shadow: none;
   display: block;
-  font-size: 14px;
+  font-size: 16px;
+  font-weight: 500;
   line-height: 21px;
+  font-family: 'Outfit', sans-serif;
   cursor: pointer;
   transition: all 0.20s ease-in-out;
 }
 
 .btn.btn-padded {
-  padding: 12px 16px;
+  padding: 16px 18px;
 }
 
 .btn.btn-primary {
   color: #FFFFFF !important;
-  font-weight: 500;
   background-color: #5454D4;
 }
 
@@ -397,6 +409,24 @@ h6 {
 .heading-5 {
   font-size: 24px;
   line-height: 29px;
+}
+
+@media only screen and (max-width: 400px) {
+  .heading-1 {
+    font-size: 60px;
+  }
+  .heading-2 {
+    font-size: 35px;
+    line-height: 48px;
+  }
+  .heading-3 {
+    font-size: 30px;
+    line-height: 34px;
+  }
+}
+
+.ff-outfit {
+  font-family: 'Outfit', sans-serif;
 }
 
 /*------------------------------------------------------------------
@@ -710,7 +740,7 @@ p {
 }
 
 .text-primary {
-  color: #387DFD !important;
+  color: #5454D4 !important;
 }
 
 .text-secondary {
@@ -749,9 +779,24 @@ p {
   color: #1D293F;
 }
 
+.is-18 {
+  height: 18px;
+  width: 18px;
+}
+
 .is-16 {
   height: 16px;
   width: 16px;
+}
+
+.is-28 {
+  height: 28px;
+  width: 28px;
+}
+
+.is-32 {
+  height: 32px;
+  width: 32px;
 }
 
 /*------------------------------------------------------------------
@@ -765,23 +810,30 @@ p {
   font-family: 'Outfit', sans-serif;
 }
 
-.navbar-expand-lg .navbar-toggler {
+.navbar-default {
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: all 0.25s ease-in-out;
+}
+
+.navbar-default .navbar-toggler {
   border: 0;
   outline: 0;
   box-shadow: none;
 }
 
-.navbar-expand-lg .navbar-toggler:focus, .navbar-expand-lg .navbar-toggler:active, .navbar-expand-lg .navbar-toggler:hover {
+.navbar-default .navbar-toggler:focus, .navbar-default .navbar-toggler:active, .navbar-default .navbar-toggler:hover {
   border: 0;
   outline: 0;
   box-shadow: none;
 }
 
-.navbar-expand-lg .navbar-toggler .bi-text-indent-left {
+.navbar-default .navbar-toggler .bi-text-indent-left {
   color: #5454D4;
 }
 
-.navbar-expand-lg .navbar-menu .navbar-nav .nav-item .nav-link {
+.navbar-default .navbar-menu .navbar-nav .nav-item .nav-link {
   font-size: 16px;
   font-weight: 500;
   color: #1D293F;
@@ -789,26 +841,18 @@ p {
   display: inline-block;
   padding-left: 0;
   padding-right: 0;
+  transition: all 0.20s ease-in-out;
 }
 
-.navbar-expand-lg .navbar-menu .navbar-nav .nav-item .nav-hover:before {
-  content: "";
-  height: 2px;
-  width: 100%;
-  position: absolute;
-  left: 0;
-  bottom: -5px;
-  background-color: #5454D4;
-  opacity: 0;
-  transition: all 0.25s ease-in-out;
+.navbar-default .navbar-menu .navbar-nav .nav-item .nav-link .btn-primary {
+  padding: 12px 16px;
 }
 
-.navbar-expand-lg .navbar-menu .navbar-nav .nav-item .nav-hover:hover:before {
-  opacity: 1;
-  bottom: 0;
+.navbar-default .navbar-menu .navbar-nav .nav-item .nav-link:hover {
+  color: #5454D4;
 }
 
-.navbar-expand-lg .navbar-menu .navbar-nav .nav-item:not(:last-of-type) {
+.navbar-default .navbar-menu .navbar-nav .nav-item:not(:last-of-type) {
   margin-right: 30px;
 }
 
@@ -825,6 +869,21 @@ p {
 
 .offcanvas .offcanvas-body .navbar-nav .nav-item:not(:last-of-type) {
   margin-bottom: 10px;
+}
+
+.navbar-scroll {
+  position: fixed;
+  background-color: #FFFFFF;
+  z-index: 5;
+  animation: fadeInDown;
+  animation-duration: 0.5s;
+  box-shadow: 2.8px 2.8px 2.2px rgba(0, 0, 0, 0.003), 6.7px 6.7px 5.3px rgba(0, 0, 0, 0.004), 12.5px 12.5px 10px rgba(0, 0, 0, 0.005), 22.3px 22.3px 17.9px rgba(0, 0, 0, 0.006), 41.8px 41.8px 33.4px rgba(0, 0, 0, 0.007), 100px 100px 80px rgba(0, 0, 0, 0.01);
+}
+
+@media only screen and (max-width: 400px) {
+  .navbar-default .navbar-mobile .nav-item .btn-primary {
+    padding: 10px 16px;
+  }
 }
 
 /* @import "debugging.css"; */

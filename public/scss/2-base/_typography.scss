@@ -57,6 +57,22 @@ h6 {
     font-size: 24px;
     line-height: 29px;
 }
+@media only screen and (max-width: 400px) {
+    .heading-1 {
+        font-size: 60px;
+    }
+    .heading-2 {
+        font-size: 35px;
+        line-height: 48px;
+    }
+    .heading-3 {
+        font-size: 30px;
+        line-height: 34px;
+    }
+}
+.ff-outfit {
+    font-family: 'Outfit', sans-serif;
+}
 /*------------------------------------------------------------------
 [Paragraphs]
 */
@@ -229,7 +245,7 @@ $font-weights: (100, 200, 300, 400, 500, 600, 700, 800, 900);
     color: #1e2022;
 }
 .text-primary {
-    color: $ac-blue!important;
+    color: $ac-iris!important;
 }
 .text-secondary {
     color: #71869d;
@@ -259,7 +275,19 @@ $font-weights: (100, 200, 300, 400, 500, 600, 700, 800, 900);
     color: $ac-oxford;
 }
 
+.is-18 {
+    height: 18px;
+    width: 18px;
+}
 .is-16 {
     height: 16px;
     width: 16px;
+}
+.is-28 {
+    height: 28px;
+    width: 28px;
+}
+.is-32 {
+    height: 32px;
+    width: 32px;
 }

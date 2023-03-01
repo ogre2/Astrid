@@ -8,7 +8,11 @@
 .offcanvas {
     font-family: 'Outfit', sans-serif;
 }
-.navbar-expand-lg {
+.navbar-default {
+    top: 0;
+    left: 0;
+    width: 100%;
+    @include easeInOut25s;
     .navbar-toggler {
         border: 0;
         outline: 0;
@@ -35,26 +39,34 @@
                     display: inline-block;
                     padding-left: 0;
                     padding-right: 0;
-                }
-                .nav-hover {
-                    &:before {
-                        content: "";
-                        height: 2px;
-                        width: 100%;
-                        position: absolute;
-                        left: 0;
-                        bottom: -5px;
-                        background-color: $ac-iris;
-                        opacity: 0;
-                        @include easeInOut25s;
+                    @include easeInOut20s;
+                    .btn-primary {
+                        padding: 12px 16px;
                     }
                     &:hover {
-                        &:before {
-                            opacity: 1;
-                            bottom: 0;
-                        }
+                        color: $ac-iris;
                     }
                 }
+                // .nav-hover {
+                //     &:before {
+                //         content: "";
+                //         height: 2px;
+                //         width: 100%;
+                //         position: absolute;
+                //         left: 0;
+                //         bottom: -5px;
+                //         background-color: $ac-iris;
+                //         opacity: 0;
+                //         @include easeInOut25s;
+                //     }
+                //     &:hover {
+                //         color: $ac-iris;
+                //         &:before {
+                //             opacity: 1;
+                //             bottom: 0;
+                //         }
+                //     }
+                // }
                 &:not(:last-of-type) {
                     margin-right: 30px;
                 }
@@ -79,6 +91,26 @@
                 }
                 &:not(:last-of-type) {
                     margin-bottom: 10px;
+                }
+            }
+        }
+    }
+}
+.navbar-scroll {
+    position: fixed;
+    background-color: $ac-white;
+    // border-bottom: 1px solid $ac-light;
+    z-index: 5;
+    animation: fadeInDown;
+    animation-duration: 0.5s;
+    @include lightShadow;
+}
+@media only screen and (max-width: 400px) {
+    .navbar-default {
+        .navbar-mobile {
+            .nav-item {
+                .btn-primary {
+                    padding: 10px 16px;
                 }
             }
         }

@@ -7,6 +7,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.1.3] - 02/28/2023
+
+### Added
+
+- Header and features section.
+
+### Fixed
+
+- Navbar mobile padding and onscroll effect.
+- Release links in this change log file.
+
 ## [1.1.2] - 02/28/2023
 
 ### Fixed
@@ -50,9 +61,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Public folder to house static assets
 - index.html template entry point
 
-[Unreleased]: https://github.com/ogre2/Asrtrid/compare/v1.1.2...HEAD
-[1.1.2]: https://github.com/ogre2/Asrtrid/compare/v1.1.1...v1.1.2
-[1.1.1]: https://github.com/ogre2/Asrtrid/compare/v1.1.0...v1.1.1
-[1.1.0]: https://github.com/ogre2/Asrtrid/compare/v1.0.1...v1.1.0
-[1.0.1]: https://github.com/ogre2/Asrtrid/compare/v1.0.0...v1.0.1
-[1.0.0]: https://github.com/ogre2/Asrtrid/releases/tag/v1.0.0
+[Unreleased]: https://github.com/ogre2/Astrid/compare/v1.1.3...HEAD
+[1.1.3]: https://github.com/ogre2/Astrid/compare/v1.1.2...v1.1.3
+[1.1.2]: https://github.com/ogre2/Astrid/compare/v1.1.1...v1.1.2
+[1.1.1]: https://github.com/ogre2/Astrid/compare/v1.1.0...v1.1.1
+[1.1.0]: https://github.com/ogre2/Astrid/compare/v1.0.1...v1.1.0
+[1.0.1]: https://github.com/ogre2/Astrid/compare/v1.0.0...v1.0.1
+[1.0.0]: https://github.com/ogre2/Astrid/releases/tag/v1.0.0

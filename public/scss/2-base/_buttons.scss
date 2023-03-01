@@ -8,6 +8,7 @@ button,
 input[type="button"],
 input[type="submit"],
 input[type="reset"] {
+    font-family: 'Outfit', sans-serif;
     outline: none;
     border: none;
     box-shadow: none;
@@ -37,16 +38,17 @@ input[type="reset"] {
     border: none;
     box-shadow: none;
     display: block;
-    font-size: 14px;
+    font-size: 16px;
+    font-weight: 500;
     line-height: 21px;
+    font-family: 'Outfit', sans-serif;
     cursor: pointer;
     @include easeInOut20s;
     &.btn-padded {
-        padding: 12px 16px;
+        padding: 16px 18px;
     }
     &.btn-primary {
         color: $ac-white!important;
-        font-weight: 500;
         background-color: $ac-iris;
     }
     &.btn-navbar {
